@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hover-1 {
+    @apply cursor-pointer text-purple-800 hover:text-purple-600 dark:text-purple-50 dark:hover:text-purple-200 hover:drop-shadow-lg transition-all ease-in-out duration-500;
+  }
+  .t-2 {
+    @apply cursor-default text-sm text-yellow-50 dark:text-purple-50 dark:hover:text-purple-200 hover:drop-shadow-lg transition-all ease-in-out duration-500;
+  }
+  .connect-btn {
+    @apply bg-green-500 text-green-900 hover:text-slate-50 p-2 rounded-xl border border-green-600 hover:bg-green-700 transition-all ease-in-out duration-150;
+  }
+  .disconnect-btn {
+    @apply bg-red-500 text-red-900 hover:text-slate-50 p-2 rounded-xl border border-red-600 hover:bg-red-700 transition-all ease-in-out duration-150;
+  }
+  .grad-prim {
+    @apply bg-gradient-to-tr from-slate-900 via-purple-900 to-purple-900;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
